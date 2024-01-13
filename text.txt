@@ -1,0 +1,1 @@
+nurullah anaş bu derste bir ajax kullanımı yapmaktadır.
