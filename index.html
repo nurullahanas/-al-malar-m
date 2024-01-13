@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="range" oninput="aralık" id="range" >
+   <h1></h1>
+   <h1></h1>
+   <h1></h1>
+    <script>
+
+        let h1s=document.getElementsByTagName("h1");
+        
+        let range_value=document.getElementById("range").value;
+        range_value=0;
+        let aralık=setInterval(()=>{
+            range_value++;
+            h1s[0].innerHTML= range_value;
+            if(range_value==10){
+                clearInterval(aralık )
+            }
+
+
+
+        },1000)
+       
+        
+
+    </script>
+</body>
+</html>

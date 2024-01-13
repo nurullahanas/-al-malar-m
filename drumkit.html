@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>durumkit</title>
+    <style>
+button{padding: 10px; background-color: blueviolet; font-size: 24px;color: azure;}
+    </style>
+</head>
+<body>
+    <button type="button">Aram sam sam çal</button> 
+    <button type="button"> Aram sam sam müziği kapat</button>
+    <button type="button">Sar Makarayı  çal</button>
+    <button type="button">Sar Makarayı  kapat</button>
+
+
+
+    <script>
+
+        //butonlar
+        var audio=new Audio("./A Ram Sam Sam.mp4");
+        var audio1=new Audio("./Sar Makarayı.mp4")
+        var button=document.querySelectorAll("button");
+        
+      
+        button.forEach(e => {
+            e.addEventListener('click',function (){console.log("tıklandı")})
+            
+        });
+
+
+
+        //oynatma eventleri
+        button[0].addEventListener("click",()=>{audio.play()})
+        button[1].addEventListener("click",()=>{audio.pause()})
+        button[2].addEventListener("click",()=>{audio1.play()})
+        button[3].addEventListener("click",()=>{audio1.pause()})
+    </script>
+</body>
+</html>
